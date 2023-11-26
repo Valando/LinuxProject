@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 
-def get_average_price_kWh():
+def get_min_price_kWh():
     now = datetime.now()
     day = now.strftime("%d")
     month = now.strftime("%m")
@@ -27,4 +27,4 @@ def get_average_price_kWh():
     else:
         print("No valid records found.")
 
-get_average_price_kWh()
+get_min_price_kWh()
